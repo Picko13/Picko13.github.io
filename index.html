@@ -1,16 +1,98 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton Nom — Portfolio</title>
+    <meta name="description" content="Portfolio de Ton Nom, étudiant en BUT Informatique.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1>
-    Hello World !
-</h1>
 
+<header class="site">
+    <div class="wrap">
+        <a href="index.html" class="logo">~/ton-nom</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" aria-current="page">Accueil</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="projets.html">Projets</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="wrap">
+
+        <section class="hero">
+            <div>
+                <span class="role">Étudiant en BUT Informatique</span>
+                <h1>Ton Prénom Ton Nom</h1>
+                <p class="lede">
+                    Je construis des applications web et des outils qui résolvent des
+                    problèmes concrets. En formation à l'IUT, à la recherche d'une
+                    alternance à partir de [mois / année].
+                </p>
+                <div class="hero-actions">
+                    <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
+                    <a href="assets/cv.pdf" class="btn btn-ghost">Télécharger mon CV</a>
+                </div>
+            </div>
+            <div class="hero-portrait">
+                Remplace ce bloc par ta photo<br>(images/profil.jpg)
+            </div>
+        </section>
+
+        <section>
+            <div class="eyebrow-line">en bref</div>
+            <dl class="quick-facts">
+                <div>
+                    <dt>Formation</dt>
+                    <dd>BUT Informatique, [Nom de ton IUT]</dd>
+                </div>
+                <div>
+                    <dt>Recherche</dt>
+                    <dd>Alternance / stage développement</dd>
+                </div>
+                <div>
+                    <dt>Basé à</dt>
+                    <dd>Le Mans, France</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section>
+            <div class="eyebrow-line">à propos</div>
+            <p>
+                Remplace ce paragraphe par une présentation courte : ton parcours,
+                ce qui t'a amené à l'informatique, et ce que tu cherches
+                aujourd'hui (stage, alternance, projet freelance...). Deux ou trois
+                phrases suffisent, l'objectif est de donner envie d'en savoir plus
+                via tes pages Compétences et Projets.
+            </p>
+        </section>
+
+    </div>
+</main>
+
+<footer class="site">
+    <div class="wrap">
+        <span>© 2026 Ton Nom</span>
+        <span>
+        <a href="mailto:ton.email@exemple.com">Email</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/tonpseudo">GitHub</a>
+        &nbsp;·&nbsp;
+        <a href="https://linkedin.com/in/tonprofil">LinkedIn</a>
+      </span>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
