@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ton Nom — Portfolio</title>
-    <meta name="description" content="Portfolio de Ton Nom, étudiant en BUT Informatique.">
+    <title>Amaury Bernard — Portfolio</title>
+    <meta name="description" content="Portfolio d'Amaury Bernard, étudiant en BUT Informatique à l'IUT de Laval.">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <header class="site">
     <div class="wrap">
-        <a href="index.html" class="logo">~/ton-nom</a>
+        <a href="index.html" class="logo">~/amaury-bernard</a>
         <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
         <nav class="main-nav">
             <ul>
@@ -29,52 +29,122 @@
 <main>
     <div class="wrap">
 
-        <section class="hero">
+        <!-- ===== Hero ===== -->
+        <section class="hero-v2 reveal">
+            <div class="avatar-wrap">
+                <span class="avatar-ring"></span>
+                <img src="images/profil.png" alt="Photo d'Amaury Bernard">
+                <div class="socials">
+                    <a href="mailto:amaury.bernard07@laposte.net">Email</a>
+                    <a href="https://github.com/tonpseudo">GitHub</a>
+                    <a href="https://linkedin.com/in/tonprofil">LinkedIn</a>
+                </div>
+            </div>
             <div>
-                <span class="role">Étudiant en BUT Informatique</span>
-                <h1>Ton Prénom Ton Nom</h1>
+                <span class="role-tag">Étudiant en BUT Informatique</span>
+                <h1>Amaury Bernard</h1>
                 <p class="lede">
-                    Je construis des applications web et des outils qui résolvent des
-                    problèmes concrets. En formation à l'IUT, à la recherche d'une
-                    alternance à partir de [mois / année].
+                    18 ans, en BUT Informatique (parcours A) à l'IUT de Laval.
+                    Je conçois des applications web et logicielles, du modèle de
+                    données jusqu'à l'interface. Recherche un stage développeur
+                    du 12 avril au 4 juin 2027.
                 </p>
                 <div class="hero-actions">
                     <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
                     <a href="assets/cv.pdf" class="btn btn-ghost">Télécharger mon CV</a>
                 </div>
             </div>
-            <div class="hero-portrait">
-                Remplace ce bloc par ta photo<br>(images/profil.jpg)
+        </section>
+
+        <!-- ===== Grande accroche + stats ===== -->
+        <section class="statement reveal">
+            <div>
+                <h2>Développeur web &amp; logiciel en formation</h2>
+                <p>
+                    Passionné par la conception propre : bien modéliser une base
+                    de données, structurer un programme orienté objet, et rendre
+                    une interface simple à utiliser. J'aime comprendre un besoin
+                    avant d'écrire la moindre ligne de code.
+                </p>
+            </div>
+            <div class="stat-row">
+                <div class="stat">
+                    <span class="num" data-count="6">0</span>
+                    <span class="label">Projets réalisés</span>
+                </div>
+                <div class="stat">
+                    <span class="num" data-count="8">0</span>
+                    <span class="label">Langages &amp; outils</span>
+                </div>
+                <div class="stat">
+                    <span class="num" data-count="2" data-suffix="ᵉ">0ᵉ</span>
+                    <span class="label">Année de BUT</span>
+                </div>
             </div>
         </section>
 
-        <section>
-            <div class="eyebrow-line">en bref</div>
-            <dl class="quick-facts">
-                <div>
-                    <dt>Formation</dt>
-                    <dd>BUT Informatique, [Nom de ton IUT]</dd>
+        <!-- ===== Bande de compétences défilante ===== -->
+        <div class="marquee reveal">
+            <div class="marquee-track">
+                <span>PHP <span class="dot">·</span> JAVA <span class="dot">·</span> SYMFONY <span class="dot">·</span> SQL <span class="dot">·</span> PYTHON <span class="dot">·</span> C <span class="dot">·</span> GIT/GITHUB <span class="dot">·</span> PROGRAMMATION ORIENTÉE OBJET</span>
+                <span>PHP <span class="dot">·</span> JAVA <span class="dot">·</span> SYMFONY <span class="dot">·</span> SQL <span class="dot">·</span> PYTHON <span class="dot">·</span> C <span class="dot">·</span> GIT/GITHUB <span class="dot">·</span> PROGRAMMATION ORIENTÉE OBJET</span>
+            </div>
+        </div>
+
+        <!-- ===== Aperçu projets ===== -->
+        <section class="reveal">
+            <div class="preview-head">
+                <h2 style="margin:0;">Projets récents</h2>
+                <a href="projets.html">Tout voir →</a>
+            </div>
+            <div class="preview-grid">
+
+                <div class="preview-card">
+                    <div class="thumb">
+                        <!-- Remplace par : <img src="images/projet-tierlist.jpg" alt="..."> -->
+                        <span class="placeholder">Ajoute une capture<br>images/projet-tierlist.jpg</span>
+                    </div>
+                    <div class="body">
+                        <h3>Logiciel de gestion de tierlist</h3>
+                        <p class="stack">Java · POO · SceneBuilder · GitHub</p>
+                    </div>
                 </div>
-                <div>
-                    <dt>Recherche</dt>
-                    <dd>Alternance / stage développement</dd>
+
+                <div class="preview-card">
+                    <div class="thumb">
+                        <!-- Remplace par : <img src="images/projet-vitrine.jpg" alt="..."> -->
+                        <span class="placeholder">Ajoute une capture<br>images/projet-vitrine.jpg</span>
+                    </div>
+                    <div class="body">
+                        <h3>Site vitrine</h3>
+                        <p class="stack">HTML · CSS · Webdesign</p>
+                    </div>
                 </div>
-                <div>
-                    <dt>Basé à</dt>
-                    <dd>Le Mans, France</dd>
+
+                <div class="preview-card">
+                    <div class="thumb">
+                        <!-- Remplace par : <img src="images/projet-album.jpg" alt="..."> -->
+                        <span class="placeholder">Ajoute une capture<br>images/projet-album.jpg</span>
+                    </div>
+                    <div class="body">
+                        <h3>Album photo en ligne</h3>
+                        <p class="stack">PHP · Symfony · GitHub</p>
+                    </div>
                 </div>
-            </dl>
+
+            </div>
         </section>
 
-        <section>
-            <div class="eyebrow-line">à propos</div>
-            <p>
-                Remplace ce paragraphe par une présentation courte : ton parcours,
-                ce qui t'a amené à l'informatique, et ce que tu cherches
-                aujourd'hui (stage, alternance, projet freelance...). Deux ou trois
-                phrases suffisent, l'objectif est de donner envie d'en savoir plus
-                via tes pages Compétences et Projets.
+        <!-- ===== CTA contact ===== -->
+        <section class="cta-contact reveal">
+            <h2>Une opportunité de stage à me proposer ?</h2>
+            <p class="lede">
+                Disponible pour un stage développeur du 12 avril au 4 juin 2027.
+                N'hésite pas à me contacter directement.
             </p>
+            <a href="mailto:amaury.bernard07@laposte.net" class="btn btn-primary">
+                amaury.bernard07@laposte.net
+            </a>
         </section>
 
     </div>
@@ -82,9 +152,9 @@
 
 <footer class="site">
     <div class="wrap">
-        <span>© 2026 Ton Nom</span>
+        <span>© 2026 Amaury Bernard</span>
         <span>
-        <a href="mailto:ton.email@exemple.com">Email</a>
+        <a href="mailto:amaury.bernard07@laposte.net">Email</a>
         &nbsp;·&nbsp;
         <a href="https://github.com/tonpseudo">GitHub</a>
         &nbsp;·&nbsp;
