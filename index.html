@@ -135,16 +135,165 @@
             </div>
         </section>
 
+        <!-- ===== Mise en avant (bento) ===== -->
+        <section class="reveal">
+            <div class="highlight-grid">
+                <div class="highlight-card amber">
+                    <span class="icon">&lt;/&gt;</span>
+                    <p>Programmation orientée objet, algorithmique, bases de données</p>
+                    <span class="arrow">↗</span>
+                </div>
+                <div class="highlight-card teal">
+                    <span class="icon">⚙</span>
+                    <p>PHP · Symfony · Java · SceneBuilder · Git · MS SQL</p>
+                    <span class="arrow">↗</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Aperçu projets (liste) ===== -->
+        <section class="reveal">
+            <div class="preview-head">
+                <h2 style="margin:0;">Projets récents</h2>
+                <a href="projets.html">Tout voir →</a>
+            </div>
+            <div class="list-rows">
+                <a class="list-row" href="projets.html">
+                    <div class="thumb">
+                        <!-- <img src="images/projet-tierlist.jpg" alt=""> -->
+                        photo
+                    </div>
+                    <div class="info">
+                        <h3>Logiciel de gestion de tierlist</h3>
+                        <span>Java · POO · SceneBuilder · GitHub</span>
+                    </div>
+                    <span class="go">↗</span>
+                </a>
+                <a class="list-row" href="projets.html">
+                    <div class="thumb">
+                        <!-- <img src="images/projet-vitrine.jpg" alt=""> -->
+                        photo
+                    </div>
+                    <div class="info">
+                        <h3>Site vitrine</h3>
+                        <span>HTML · CSS · Webdesign</span>
+                    </div>
+                    <span class="go">↗</span>
+                </a>
+                <a class="list-row" href="projets.html">
+                    <div class="thumb">
+                        <!-- <img src="images/projet-album.jpg" alt=""> -->
+                        photo
+                    </div>
+                    <div class="info">
+                        <h3>Album photo en ligne</h3>
+                        <span>PHP · Symfony · GitHub</span>
+                    </div>
+                    <span class="go">↗</span>
+                </a>
+                <a class="list-row" href="projets.html">
+                    <div class="thumb">
+                        <!-- <img src="images/projet-bdd.jpg" alt=""> -->
+                        photo
+                    </div>
+                    <div class="info">
+                        <h3>Conception d'une base de données</h3>
+                        <span>MCD · MLD · SQL · MS SQL</span>
+                    </div>
+                    <span class="go">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== Parcours ===== -->
+        <section class="reveal">
+            <div class="eyebrow-line">parcours</div>
+            <h2>Ma formation</h2>
+            <div style="margin-top: 28px;">
+                <div class="timeline-card">
+                    <div>
+                        <h3>BUT Informatique, parcours A</h3>
+                        <p>IUT de Laval. Conception logicielle, bases de données, réseaux, gestion de projet.</p>
+                    </div>
+                    <span class="when">Sept. 2025 — présent</span>
+                </div>
+                <div class="timeline-card">
+                    <div>
+                        <h3>Baccalauréat général</h3>
+                        <p>Spécialités Numérique et sciences informatiques, Mathématiques.</p>
+                    </div>
+                    <span class="when">2025</span>
+                </div>
+                <div class="timeline-card">
+                    <div>
+                        <h3>Stage développeur (recherche en cours)</h3>
+                        <p>Disponible pour un stage développeur web ou logiciel.</p>
+                    </div>
+                    <span class="when">12 avril — 4 juin 2027</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Outils ===== -->
+        <section class="reveal">
+            <div class="eyebrow-line">au quotidien</div>
+            <h2>Outils &amp; environnement</h2>
+            <div class="tools-grid" style="margin-top: 28px;">
+                <div class="tool-card">
+                    <span class="glyph">Git</span>
+                    <div><h3>Git / GitHub</h3><span>Versioning</span></div>
+                </div>
+                <div class="tool-card">
+                    <span class="glyph">VS</span>
+                    <div><h3>VS Code</h3><span>Éditeur</span></div>
+                </div>
+                <div class="tool-card">
+                    <span class="glyph">IJ</span>
+                    <div><h3>IntelliJ / Eclipse</h3><span>IDE Java</span></div>
+                </div>
+                <div class="tool-card">
+                    <span class="glyph">DB</span>
+                    <div><h3>MS SQL / PhpMyAdmin</h3><span>Bases de données</span></div>
+                </div>
+                <div class="tool-card">
+                    <span class="glyph">SF</span>
+                    <div><h3>Symfony</h3><span>Framework PHP</span></div>
+                </div>
+                <div class="tool-card">
+                    <span class="glyph">UI</span>
+                    <div><h3>SceneBuilder</h3><span>Interfaces Java</span></div>
+                </div>
+            </div>
+        </section>
+
         <!-- ===== CTA contact ===== -->
         <section class="cta-contact reveal">
             <h2>Une opportunité de stage à me proposer ?</h2>
             <p class="lede">
                 Disponible pour un stage développeur du 12 avril au 4 juin 2027.
-                N'hésite pas à me contacter directement.
+                Écris-moi directement via ce formulaire.
             </p>
-            <a href="mailto:amaury.bernard07@laposte.net" class="btn btn-primary">
-                amaury.bernard07@laposte.net
-            </a>
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="field">
+                        <label for="cf-name">Nom</label>
+                        <input type="text" id="cf-name" name="name" placeholder="Ton nom" required>
+                    </div>
+                    <div class="field">
+                        <label for="cf-email">Email</label>
+                        <input type="email" id="cf-email" name="email" placeholder="toi@exemple.com" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="cf-message">Message</label>
+                    <textarea id="cf-message" name="message" placeholder="Ton message..." required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+            <p class="form-note">
+                Ouvre ton client mail avec le message pré-rempli — pas de serveur derrière,
+                c'est un site statique GitHub Pages.
+            </p>
         </section>
 
     </div>

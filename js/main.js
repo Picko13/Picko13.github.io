@@ -36,7 +36,26 @@ document.addEventListener("DOMContentLoaded", function () {
     items.forEach(function (el) { observer.observe(el); });
 });
 
-// Compteurs animés (stats de la page d'accueil)
+// Formulaire de contact -> ouvre le client mail avec le message pré-rempli
+document.addEventListener("DOMContentLoaded", function () {
+    var form = document.querySelector("#contact-form");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = form.querySelector("#cf-name").value.trim();
+        var email = form.querySelector("#cf-email").value.trim();
+        var message = form.querySelector("#cf-message").value.trim();
+
+        var subject = encodeURIComponent("Contact portfolio — " + (name || "Sans nom"));
+        var body = encodeURIComponent(
+            "Nom : " + name + "\nEmail : " + email + "\n\n" + message
+        );
+
+        window.location.href =
+            "mailto:amaury.bernard07@laposte.net?subject=" + subject + "&body=" + body;
+    });
+});
 document.addEventListener("DOMContentLoaded", function () {
     var counters = document.querySelectorAll(".stat .num[data-count]");
     if (!counters.length || !("IntersectionObserver" in window)) return;
