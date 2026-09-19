@@ -1,6 +1,6 @@
 // ============================================
 // Amaury Bernard — Portfolio
-// Mobile nav, scroll reveal, contact form
+// Mobile nav, scroll reveal, image fallbacks, contact form
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -43,6 +43,19 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         reveals.forEach((el) => el.classList.add('in'));
     }
+
+    // ---- Image fallbacks ----
+    // Every [data-fallback-img] starts hidden (see style.css). If the real
+    // file (images/profil.jpg, images/projet1.png, ...) loads successfully,
+    // we reveal it and hide the placeholder that sits right before it in
+    // the markup. If it 404s, nothing happens and the placeholder stays.
+    document.querySelectorAll('[data-fallback-img]').forEach((img) => {
+        img.addEventListener('load', () => {
+            img.style.display = 'block';
+            const placeholder = img.previousElementSibling;
+            if (placeholder) placeholder.style.display = 'none';
+        });
+    });
 
     // ---- Contact form -> mailto ----
     const form = document.getElementById('contactForm');
