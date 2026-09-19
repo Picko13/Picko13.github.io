@@ -4,7 +4,7 @@ Site portfolio personnel, une seule page (single-page), présentant mon profil
 d'étudiant en BUT Informatique — Parcours A à l'IUT de Laval : compétences,
 projets, formation, expérience et contact.
 
-🔗 En ligne : https://tonpseudo.github.io/
+🔗 En ligne : https://picko13.github.io/
 
 ## Structure
 
