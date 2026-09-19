@@ -3,315 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amaury Bernard — Portfolio</title>
-    <meta name="description" content="Portfolio d'Amaury Bernard, étudiant en BUT Informatique à l'IUT de Laval.">
-    <link rel="icon" href="images/favicon.ico">
+    <title>Amaury Bernard — Développeur Informatique</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Work+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site">
-    <div class="wrap">
-        <a href="index.html" class="logo">~/amaury-bernard</a>
-        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html" aria-current="page">Accueil</a></li>
-                <li><a href="competences.html">Compétences</a></li>
-                <li><a href="projets.html">Projets</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+<div class="nav-shell">
+    <nav class="nav-pill" aria-label="Navigation principale">
+        <a href="#home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 11L12 4l8 7"/><path d="M6 10v9a1 1 0 0 0 1 1h4v-6h2v6h4a1 1 0 0 0 1-1v-9"/></svg><span class="nav-label">Accueil</span></a>
+        <a href="#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c1.2-3.6 4-5.4 7-5.4s5.8 1.8 7 5.4"/></svg><span class="nav-label">À propos</span></a>
+        <a href="#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg><span class="nav-label">Projets</span></a>
+        <a href="#skills"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg><span class="nav-label">Compétences</span></a>
+        <a href="#experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="12" rx="1.5"/><path d="M8 7V5.5A1.5 1.5 0 0 1 9.5 4h5A1.5 1.5 0 0 1 16 5.5V7"/></svg><span class="nav-label">Expérience</span></a>
+        <a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6l9 7 9-7"/></svg><span class="nav-label">Contact</span></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+</div>
+<div class="mobile-panel" id="mobilePanel">
+    <a href="#home">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#projects">Projets</a>
+    <a href="#skills">Compétences</a>
+    <a href="#experience">Expérience</a>
+    <a href="#contact">Contact</a>
+</div>
 
-<main>
-    <div class="wrap">
+<main class="wrap">
+    <div class="layout">
 
-        <!-- ===== Hero ===== -->
-        <section class="hero-v2 reveal">
-            <div class="avatar-wrap">
-                <span class="avatar-ring"></span>
-                <img src="images/profil.png" alt="Photo d'Amaury Bernard">
-                <div class="socials">
-                    <a href="mailto:amaury.bernard07@laposte.net">Email</a>
-                    <a href="https://github.com/tonpseudo">GitHub</a>
-                    <a href="https://linkedin.com/in/tonprofil">LinkedIn</a>
+        <!-- STICKY PROFILE (stays alongside the whole page on desktop) -->
+        <aside class="profile-col">
+            <div class="profile-card">
+                <div class="profile-photo"><span>AB</span></div>
+                <div>
+                    <p class="profile-name">Amaury Bernard</p>
+                    <p class="profile-pitch">Étudiant en développement logiciel et web, à l'IUT de Laval.</p>
+                </div>
+                <div class="profile-meta">
+                    <div><dt>Âge</dt><dd>18 ans</dd></div>
+                    <div><dt>Formation</dt><dd>BUT Informatique — A</dd></div>
+                    <div><dt>École</dt><dd>IUT de Laval</dd></div>
+                    <div><dt>Niveau</dt><dd>BAC+2</dd></div>
+                </div>
+                <div class="profile-links">
+                    <a href="mailto:amaury.bernard07@laposte.net" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6l9 7 9-7"/></svg></a>
+                    <a href="tel:+33778728927" aria-label="Téléphone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 13l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></a>
+                    <a href="#" aria-label="GitHub (lien à venir)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 0 0-2.85 17.54c.45.08.6-.2.6-.43v-1.7c-2.5.55-3.03-1.07-3.03-1.07-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.38 2.1.98 2.6.75.08-.58.31-.98.57-1.2-2-.23-4.1-1-4.1-4.44 0-.98.35-1.78.92-2.4-.1-.23-.4-1.15.09-2.4 0 0 .75-.24 2.45.92a8.4 8.4 0 0 1 4.46 0c1.7-1.16 2.45-.92 2.45-.92.49 1.25.18 2.17.09 2.4.57.62.92 1.42.92 2.4 0 3.45-2.1 4.2-4.11 4.43.32.28.6.83.6 1.68v2.5c0 .23.15.51.6.43A9 9 0 0 0 12 3z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn (lien à venir)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7.5 10.5v6M7.5 7.5v.01M11.5 16.5v-3.7c0-1.3.9-2.3 2.3-2.3 1.2 0 1.9.8 1.9 2.4v3.6"/></svg></a>
                 </div>
             </div>
-            <div>
-                <span class="role-tag">Étudiant en BUT Informatique</span>
-                <h1>Amaury Bernard</h1>
-                <p class="lede">
-                    18 ans, en BUT Informatique (parcours A) à l'IUT de Laval.
-                    Je conçois des applications web et logicielles, du modèle de
-                    données jusqu'à l'interface. Recherche un stage développeur
-                    du 12 avril au 4 juin 2027.
-                </p>
-                <div class="hero-actions">
-                    <a href="projets.html" class="btn btn-primary">Voir mes projets</a>
-                    <a href="assets/cv.pdf" class="btn btn-ghost">Télécharger mon CV</a>
-                </div>
-            </div>
-        </section>
+        </aside>
 
-        <!-- ===== Grande accroche + stats ===== -->
-        <section class="statement reveal">
-            <div>
-                <h2>Développeur web &amp; logiciel en formation</h2>
-                <p>
-                    Passionné par la conception propre : bien modéliser une base
-                    de données, structurer un programme orienté objet, et rendre
-                    une interface simple à utiliser. J'aime comprendre un besoin
-                    avant d'écrire la moindre ligne de code.
-                </p>
-            </div>
-            <div class="stat-row">
-                <div class="stat">
-                    <span class="num" data-count="6">0</span>
-                    <span class="label">Projets réalisés</span>
-                </div>
-                <div class="stat">
-                    <span class="num" data-count="8">0</span>
-                    <span class="label">Langages &amp; outils</span>
-                </div>
-                <div class="stat">
-                    <span class="num" data-count="2" data-suffix="ᵉ">0ᵉ</span>
-                    <span class="label">Année de BUT</span>
-                </div>
-            </div>
-        </section>
+        <!-- CONTENT COLUMN — every section lives here, in order -->
+        <div class="hero-col">
 
-        <!-- ===== Bande de compétences défilante ===== -->
-        <div class="marquee reveal">
-            <div class="marquee-track">
-                <span>PHP <span class="dot">·</span> JAVA <span class="dot">·</span> SYMFONY <span class="dot">·</span> SQL <span class="dot">·</span> PYTHON <span class="dot">·</span> C <span class="dot">·</span> GIT/GITHUB <span class="dot">·</span> PROGRAMMATION ORIENTÉE OBJET</span>
-                <span>PHP <span class="dot">·</span> JAVA <span class="dot">·</span> SYMFONY <span class="dot">·</span> SQL <span class="dot">·</span> PYTHON <span class="dot">·</span> C <span class="dot">·</span> GIT/GITHUB <span class="dot">·</span> PROGRAMMATION ORIENTÉE OBJET</span>
+            <!-- HERO -->
+            <section id="home" class="hero-block reveal">
+                <div class="hero-head">
+                    <div class="eyebrow" style="margin-bottom:14px;">Étudiant en BUT Informatique — Parcours A · IUT de Laval</div>
+                    <h1 class="hero-title"><span class="solid">DÉVELOPPEUR</span><span class="ghost">INFORMATIQUE</span></h1>
+                </div>
+                <p class="hero-intro">Étudiant en BUT Informatique à l'IUT de Laval, je m'intéresse au développement logiciel, au développement web et à la conception d'applications.</p>
+                <p class="hero-internship">À la recherche d'un stage développeur — 12 avril → 4 juin 2027</p>
+
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-ghost">Me contacter</a>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat"><b>2</b><span>Années de formation</span></div>
+                    <div class="stat"><b>3</b><span>Projets réalisés</span></div>
+                    <div class="stat"><b>8</b><span>Technologies pratiquées</span></div>
+                </div>
+
+                <div class="highlight-row">
+                    <a href="#skills" class="highlight-card card-orange">
+                        <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+                        <span class="highlight-text">PHP, Symfony, Java, SQL</span>
+                        <span class="highlight-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+                    </a>
+                    <a href="#projects" class="highlight-card card-lime">
+                        <svg class="highlight-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/></svg>
+                        <span class="highlight-text">Projets académiques &amp; personnels</span>
+                        <span class="highlight-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+                    </a>
+                </div>
+            </section>
+
+            <div class="marquee-band">
+                <div class="marquee-track">
+                    <span>Java</span><span>PHP</span><span>Symfony</span><span>Python</span><span>C</span><span>SQL</span><span>HTML</span><span>CSS</span><span>Git</span><span>GitHub</span>
+                    <span>Java</span><span>PHP</span><span>Symfony</span><span>Python</span><span>C</span><span>SQL</span><span>HTML</span><span>CSS</span><span>Git</span><span>GitHub</span>
+                </div>
             </div>
+
+            <!-- ABOUT -->
+            <section id="about" class="section reveal">
+                <div class="section-top">
+                    <h2 class="ghost-title"><span class="solid">À</span><span class="ghost">PROPOS</span></h2>
+                </div>
+                <p class="about-lede">Étudiant curieux, attiré par la logique du code autant que par la clarté d'une interface bien pensée.</p>
+                <p class="about-body">Actuellement en deuxième année de BUT Informatique à l'IUT de Laval, je construis progressivement des compétences en développement logiciel et en développement web, à travers des projets académiques et personnels. J'aime comprendre comment un système fonctionne, du modèle de données jusqu'à l'interface, et je porte une attention particulière à la qualité et à la lisibilité du code que j'écris.</p>
+                <ul class="about-points">
+                    <li><b>Développement</b><p>Applications logicielles et web, du back-end à l'interface utilisateur.</p></li>
+                    <li><b>Curiosité technique</b><p>Envie constante de comprendre les outils et méthodes du développement.</p></li>
+                    <li><b>Travail d'équipe</b><p>Habitué à collaborer sur des projets académiques en groupe.</p></li>
+                    <li><b>Gestion de projet</b><p>Organisation des tâches et contribution à la planification.</p></li>
+                </ul>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="skills" class="section reveal" style="border-top:1px solid var(--line);">
+                <div class="section-top">
+                    <h2 class="ghost-title"><span class="solid">COMPÉ</span><span class="ghost">TENCES</span></h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card"><h3>POO</h3><p>Conception d'applications à partir de concepts orientés objet.</p></div>
+                    <div class="skill-card"><h3>Java</h3><p>Développement d'applications en Java, approche orientée objet.</p></div>
+                    <div class="skill-card"><h3>PHP / Symfony</h3><p>Développement d'applications web avec PHP et Symfony.</p></div>
+                    <div class="skill-card"><h3>Bases de données / SQL</h3><p>Conception, modélisation et requêtage de bases de données.</p></div>
+                    <div class="skill-card"><h3>Tests / débogage</h3><p>Test des applications et identification des erreurs.</p></div>
+                    <div class="skill-card"><h3>Algorithmique</h3><p>Conception et implémentation de solutions algorithmiques.</p></div>
+                    <div class="skill-card"><h3>Travail d'équipe</h3><p>Collaboration sur des projets académiques et de développement.</p></div>
+                    <div class="skill-card"><h3>Gestion de projet</h3><p>Organisation des tâches et contribution à la planification.</p></div>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="section reveal" style="border-top:1px solid var(--line);">
+                <div class="section-top">
+                    <h2 class="ghost-title"><span class="solid">RÉCENTS</span><span class="ghost">PROJETS</span></h2>
+                </div>
+                <div class="list-cards">
+                    <div class="list-card">
+                        <div class="list-thumb" style="background:var(--orange); color:#fff;">01</div>
+                        <div class="list-body">
+                            <h3 class="list-title">Site d'album photo</h3>
+                            <p class="list-sub">Développement web · Site personnel d'album photo avec PHP et Symfony.</p>
+                            <div class="list-tags"><span>PHP</span><span>Symfony</span><span>HTML/CSS</span><span>GitHub</span></div>
+                        </div>
+                        <span class="list-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-thumb" style="background:var(--lime); color:#151312;">02</div>
+                        <div class="list-body">
+                            <h3 class="list-title">Application de gestion logicielle</h3>
+                            <p class="list-sub">Développement logiciel · Conception orientée objet, interface graphique, back-office.</p>
+                            <div class="list-tags"><span>Java</span><span>POO</span><span>Git</span></div>
+                        </div>
+                        <span class="list-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+                    </div>
+                    <div class="list-card">
+                        <div class="list-thumb" style="background:var(--bg-panel-strong); color:var(--ink);">03</div>
+                        <div class="list-body">
+                            <h3 class="list-title">Site vitrine</h3>
+                            <p class="list-sub">Design web / front-end · Accent sur le graphisme et l'ergonomie.</p>
+                            <div class="list-tags"><span>HTML</span><span>CSS</span><span>UI / UX</span></div>
+                        </div>
+                        <span class="list-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section id="education" class="section reveal" style="border-top:1px solid var(--line);">
+                <div class="section-top">
+                    <h2 class="ghost-title"><span class="solid">FOR</span><span class="ghost">MATION</span></h2>
+                </div>
+                <div class="list-cards">
+                    <div class="list-card">
+                        <div class="time-card" style="flex:1;">
+                            <div class="time-date">Sept. 2025<br>— Présent</div>
+                            <div class="list-body">
+                                <h3 class="list-title" style="font-size:19px;">BUT Informatique — Parcours A</h3>
+                                <p class="list-sub" style="margin-bottom:0;">IUT de Laval · BAC+2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-card">
+                        <div class="time-card" style="flex:1;">
+                            <div class="time-date">2022 — 2025</div>
+                            <div class="list-body">
+                                <h3 class="list-title" style="font-size:19px;">Baccalauréat Général</h3>
+                                <p class="list-sub" style="margin-bottom:0;">Spécialités : Numérique et Sciences Informatiques, Mathématiques</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section id="experience" class="section reveal" style="border-top:1px solid var(--line);">
+                <div class="section-top">
+                    <h2 class="ghost-title"><span class="solid">EXPÉ</span><span class="ghost">RIENCE</span></h2>
+                </div>
+                <div class="list-cards">
+                    <div class="list-card">
+                        <div class="time-card" style="flex:1;">
+                            <div class="time-date">Projet<br>académique</div>
+                            <div class="list-body">
+                                <h3 class="list-title" style="font-size:19px;">Conception &amp; développement de base de données</h3>
+                                <p class="list-sub">Conception et modélisation d'une base de données, réalisation de MCD et MLD, requêtage SQL et utilisation de MS SQL.</p>
+                                <div class="list-tags"><span>MCD</span><span>MLD</span><span>SQL</span><span>MS SQL</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="internship-card">
+                    <div>
+                        <div class="eyebrow" style="margin-bottom:8px; color:var(--orange);">À la recherche d'un stage</div>
+                        <h4>Stage développeur — BUT+2 Informatique</h4>
+                        <p>12 avril 2027 → 4 juin 2027</p>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                </div>
+            </section>
+
+            <!-- TECHNOLOGIES -->
+            <section id="technologies" class="section reveal" style="border-top:1px solid var(--line);">
+                <div class="section-top">
+                    <h2 class="ghost-title"><span class="solid">TECHNO</span><span class="ghost">LOGIES</span></h2>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card"><div class="tool-icon">PHP</div><div><p class="tool-name">PHP</p><p class="tool-cat">Langage</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">JAVA</div><div><p class="tool-name">Java</p><p class="tool-cat">Langage</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">PY</div><div><p class="tool-name">Python</p><p class="tool-cat">Langage</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">C</div><div><p class="tool-name">C</p><p class="tool-cat">Langage</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">SQL</div><div><p class="tool-name">SQL / T-SQL</p><p class="tool-cat">Bases de données</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">SF</div><div><p class="tool-name">Symfony</p><p class="tool-cat">Framework</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">DB</div><div><p class="tool-name">MS SQL / PhpMyAdmin</p><p class="tool-cat">Bases de données</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">GIT</div><div><p class="tool-name">Git / GitHub</p><p class="tool-cat">Outils</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">IDE</div><div><p class="tool-name">VS Code, Eclipse, IntelliJ</p><p class="tool-cat">Environnements</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">SB</div><div><p class="tool-name">SceneBuilder</p><p class="tool-cat">Outils</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">EN</div><div><p class="tool-name">Anglais</p><p class="tool-cat">Intermédiaire</p></div></div>
+                    <div class="tool-card"><div class="tool-icon">FR</div><div><p class="tool-name">HTML / CSS</p><p class="tool-cat">Langages</p></div></div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="section reveal" style="border-top:1px solid var(--line);">
+                <h2 class="ghost-title"><span class="solid">TRAVAILLONS</span><span class="ghost">ENSEMBLE</span></h2>
+                <p class="contact-lede">Je suis ouvert à échanger sur des opportunités de stage, des projets de développement ou des opportunités professionnelles.</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <dl>
+                            <dt>Email</dt><dd><a href="mailto:amaury.bernard07@laposte.net">amaury.bernard07@laposte.net</a></dd>
+                            <dt>Téléphone</dt><dd><a href="tel:+33778728927">07 78 72 89 27</a></dd>
+                            <dt>LinkedIn</dt><dd class="placeholder">[ lien LinkedIn ]</dd>
+                            <dt>GitHub</dt><dd class="placeholder">[ lien GitHub ]</dd>
+                            <dt>Portfolio</dt><dd class="placeholder">[ lien portfolio ]</dd>
+                        </dl>
+                    </div>
+
+                    <form id="contactForm">
+                        <div class="field">
+                            <label for="cf-name">Nom</label>
+                            <input id="cf-name" name="name" type="text" placeholder="Votre nom" required>
+                        </div>
+                        <div class="field">
+                            <label for="cf-email">Email</label>
+                            <input id="cf-email" name="email" type="email" placeholder="vous@email.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="cf-message">Message</label>
+                            <textarea id="cf-message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Envoyer le message</button>
+                        <p class="form-note">Ouvre votre messagerie avec le message pré-rempli, à destination de amaury.bernard07@laposte.net.</p>
+                    </form>
+                </div>
+            </section>
+
         </div>
-
-        <!-- ===== Aperçu projets ===== -->
-        <section class="reveal">
-            <div class="preview-head">
-                <h2 style="margin:0;">Projets récents</h2>
-                <a href="projets.html">Tout voir →</a>
-            </div>
-            <div class="preview-grid">
-
-                <div class="preview-card">
-                    <div class="thumb">
-                        <!-- Remplace par : <img src="images/projet-tierlist.jpg" alt="..."> -->
-                        <span class="placeholder">Ajoute une capture<br>images/projet-tierlist.jpg</span>
-                    </div>
-                    <div class="body">
-                        <h3>Logiciel de gestion de tierlist</h3>
-                        <p class="stack">Java · POO · SceneBuilder · GitHub</p>
-                    </div>
-                </div>
-
-                <div class="preview-card">
-                    <div class="thumb">
-                        <!-- Remplace par : <img src="images/projet-vitrine.jpg" alt="..."> -->
-                        <span class="placeholder">Ajoute une capture<br>images/projet-vitrine.jpg</span>
-                    </div>
-                    <div class="body">
-                        <h3>Site vitrine</h3>
-                        <p class="stack">HTML · CSS · Webdesign</p>
-                    </div>
-                </div>
-
-                <div class="preview-card">
-                    <div class="thumb">
-                        <!-- Remplace par : <img src="images/projet-album.jpg" alt="..."> -->
-                        <span class="placeholder">Ajoute une capture<br>images/projet-album.jpg</span>
-                    </div>
-                    <div class="body">
-                        <h3>Album photo en ligne</h3>
-                        <p class="stack">PHP · Symfony · GitHub</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- ===== Mise en avant (bento) ===== -->
-        <section class="reveal">
-            <div class="highlight-grid">
-                <div class="highlight-card amber">
-                    <span class="icon">&lt;/&gt;</span>
-                    <p>Programmation orientée objet, algorithmique, bases de données</p>
-                    <span class="arrow">↗</span>
-                </div>
-                <div class="highlight-card teal">
-                    <span class="icon">⚙</span>
-                    <p>PHP · Symfony · Java · SceneBuilder · Git · MS SQL</p>
-                    <span class="arrow">↗</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== Aperçu projets (liste) ===== -->
-        <section class="reveal">
-            <div class="preview-head">
-                <h2 style="margin:0;">Projets récents</h2>
-                <a href="projets.html">Tout voir →</a>
-            </div>
-            <div class="list-rows">
-                <a class="list-row" href="projets.html">
-                    <div class="thumb">
-                        <!-- <img src="images/projet-tierlist.jpg" alt=""> -->
-                        photo
-                    </div>
-                    <div class="info">
-                        <h3>Logiciel de gestion de tierlist</h3>
-                        <span>Java · POO · SceneBuilder · GitHub</span>
-                    </div>
-                    <span class="go">↗</span>
-                </a>
-                <a class="list-row" href="projets.html">
-                    <div class="thumb">
-                        <!-- <img src="images/projet-vitrine.jpg" alt=""> -->
-                        photo
-                    </div>
-                    <div class="info">
-                        <h3>Site vitrine</h3>
-                        <span>HTML · CSS · Webdesign</span>
-                    </div>
-                    <span class="go">↗</span>
-                </a>
-                <a class="list-row" href="projets.html">
-                    <div class="thumb">
-                        <!-- <img src="images/projet-album.jpg" alt=""> -->
-                        photo
-                    </div>
-                    <div class="info">
-                        <h3>Album photo en ligne</h3>
-                        <span>PHP · Symfony · GitHub</span>
-                    </div>
-                    <span class="go">↗</span>
-                </a>
-                <a class="list-row" href="projets.html">
-                    <div class="thumb">
-                        <!-- <img src="images/projet-bdd.jpg" alt=""> -->
-                        photo
-                    </div>
-                    <div class="info">
-                        <h3>Conception d'une base de données</h3>
-                        <span>MCD · MLD · SQL · MS SQL</span>
-                    </div>
-                    <span class="go">↗</span>
-                </a>
-            </div>
-        </section>
-
-        <!-- ===== Parcours ===== -->
-        <section class="reveal">
-            <div class="eyebrow-line">parcours</div>
-            <h2>Ma formation</h2>
-            <div style="margin-top: 28px;">
-                <div class="timeline-card">
-                    <div>
-                        <h3>BUT Informatique, parcours A</h3>
-                        <p>IUT de Laval. Conception logicielle, bases de données, réseaux, gestion de projet.</p>
-                    </div>
-                    <span class="when">Sept. 2025 — présent</span>
-                </div>
-                <div class="timeline-card">
-                    <div>
-                        <h3>Baccalauréat général</h3>
-                        <p>Spécialités Numérique et sciences informatiques, Mathématiques.</p>
-                    </div>
-                    <span class="when">2025</span>
-                </div>
-                <div class="timeline-card">
-                    <div>
-                        <h3>Stage développeur (recherche en cours)</h3>
-                        <p>Disponible pour un stage développeur web ou logiciel.</p>
-                    </div>
-                    <span class="when">12 avril — 4 juin 2027</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== Outils ===== -->
-        <section class="reveal">
-            <div class="eyebrow-line">au quotidien</div>
-            <h2>Outils &amp; environnement</h2>
-            <div class="tools-grid" style="margin-top: 28px;">
-                <div class="tool-card">
-                    <span class="glyph">Git</span>
-                    <div><h3>Git / GitHub</h3><span>Versioning</span></div>
-                </div>
-                <div class="tool-card">
-                    <span class="glyph">VS</span>
-                    <div><h3>VS Code</h3><span>Éditeur</span></div>
-                </div>
-                <div class="tool-card">
-                    <span class="glyph">IJ</span>
-                    <div><h3>IntelliJ / Eclipse</h3><span>IDE Java</span></div>
-                </div>
-                <div class="tool-card">
-                    <span class="glyph">DB</span>
-                    <div><h3>MS SQL / PhpMyAdmin</h3><span>Bases de données</span></div>
-                </div>
-                <div class="tool-card">
-                    <span class="glyph">SF</span>
-                    <div><h3>Symfony</h3><span>Framework PHP</span></div>
-                </div>
-                <div class="tool-card">
-                    <span class="glyph">UI</span>
-                    <div><h3>SceneBuilder</h3><span>Interfaces Java</span></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== CTA contact ===== -->
-        <section class="cta-contact reveal">
-            <h2>Une opportunité de stage à me proposer ?</h2>
-            <p class="lede">
-                Disponible pour un stage développeur du 12 avril au 4 juin 2027.
-                Écris-moi directement via ce formulaire.
-            </p>
-            <form id="contact-form" class="contact-form">
-                <div class="form-row">
-                    <div class="field">
-                        <label for="cf-name">Nom</label>
-                        <input type="text" id="cf-name" name="name" placeholder="Ton nom" required>
-                    </div>
-                    <div class="field">
-                        <label for="cf-email">Email</label>
-                        <input type="email" id="cf-email" name="email" placeholder="toi@exemple.com" required>
-                    </div>
-                </div>
-                <div class="field">
-                    <label for="cf-message">Message</label>
-                    <textarea id="cf-message" name="message" placeholder="Ton message..." required></textarea>
-                </div>
-                <button type="submit">Envoyer</button>
-            </form>
-            <p class="form-note">
-                Ouvre ton client mail avec le message pré-rempli — pas de serveur derrière,
-                c'est un site statique GitHub Pages.
-            </p>
-        </section>
-
     </div>
 </main>
 
-<footer class="site">
+<footer class="footer">
     <div class="wrap">
-        <span>© 2026 Amaury Bernard</span>
-        <span>
-        <a href="mailto:amaury.bernard07@laposte.net">Email</a>
-        &nbsp;·&nbsp;
-        <a href="https://github.com/tonpseudo">GitHub</a>
-        &nbsp;·&nbsp;
-        <a href="https://linkedin.com/in/tonprofil">LinkedIn</a>
-      </span>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="eyebrow" style="margin-bottom:8px;">Amaury Bernard</div>
+                <div>BUT Informatique — Parcours A<br>IUT de Laval</div>
+            </div>
+            <div class="footer-col">
+                <div class="eyebrow" style="margin-bottom:8px;">Email</div>
+                <div><a href="mailto:amaury.bernard07@laposte.net">amaury.bernard07@laposte.net</a></div>
+            </div>
+            <div class="footer-col">
+                <div class="eyebrow" style="margin-bottom:8px;">GitHub</div>
+                <div>[ lien GitHub ]</div>
+            </div>
+            <div class="footer-col">
+                <div class="eyebrow" style="margin-bottom:8px;">LinkedIn</div>
+                <div>[ lien LinkedIn ]</div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Amaury Bernard</div>
     </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
