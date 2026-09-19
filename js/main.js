@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
 
             window.location.href =
-                'mailto:amaury.bernard07@laposte.net?subject=' + subject + '&body=' + body;
+                'mailto:amaury.bernard15@gmail.com?subject=' + subject + '&body=' + body;
         });
     }
 });

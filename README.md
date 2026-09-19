@@ -1,8 +1,8 @@
 # Portfolio — Amaury Bernard
 
 Site portfolio personnel, une seule page (single-page), présentant mon profil
-d'étudiant en BUT Informatique — Parcours A à l'IUT de Laval : compétences,
-projets, formation, expérience et contact.
+d'étudiant en BUT Informatique à l'IUT de Laval : projets, technologies,
+expérience et contact.
 
 🔗 En ligne : https://picko13.github.io/
 
@@ -24,8 +24,7 @@ assets/
 
 Le dossier `pages/` n'est pas utilisé : conformément au cahier des charges,
 le site est volontairement en une seule page avec navigation par ancres
-(`#home`, `#about`, `#projects`, `#skills`, `#education`, `#experience`,
-`#technologies`, `#contact`).
+(`#home`, `#about`, `#projects`, `#technologies`, `#experience`, `#contact`).
 
 ## Ajouter mes propres images
 
