@@ -567,35 +567,55 @@ img,svg{ display:block; max-width:100%; }
     margin:0;
 }
 
-/* ---------------- TECH TOOLS GRID ---------------- */
-.tools-grid{
+/* ---------------- TECHNOLOGIES (4 columns, real logos with fallback) ---------------- */
+.tech-columns{
     display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:10px;
+    grid-template-columns:repeat(4, 1fr);
+    gap:32px;
 }
-@media (max-width:600px){ .tools-grid{ grid-template-columns:1fr; } }
-.tool-card{
-    background:var(--bg-panel);
-    border:1px solid var(--line);
-    border-radius:var(--radius-md);
-    padding:16px;
-    display:flex; align-items:center; gap:16px;
-    transition:background .2s ease;
-}
-.tool-card:hover{ background:var(--bg-panel-strong); }
-.tool-icon{
-    flex:0 0 52px;
-    width:52px; height:52px;
-    border-radius:var(--radius-sm);
-    display:flex; align-items:center; justify-content:center;
+@media (max-width:860px){ .tech-columns{ grid-template-columns:repeat(2, 1fr); gap:28px; } }
+@media (max-width:480px){ .tech-columns{ grid-template-columns:1fr; } }
+.tech-col-head{
     font-family:var(--font-display);
     font-weight:600;
     font-size:12px;
-    background:var(--bg-panel-strong);
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    padding-bottom:12px;
+    margin-bottom:16px;
+    border-bottom:1px solid var(--line);
+}
+.tech-item{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:9px 0;
+}
+.tech-item-name{
+    font-size:14px;
+    font-weight:500;
     color:var(--ink);
 }
-.tool-name{ font-family:var(--font-display); font-weight:600; font-size:16px; margin:0 0 2px; }
-.tool-cat{ color:var(--ink-soft); font-size:12.5px; margin:0; }
+/* icon badge: a hand-drawn fallback icon sits underneath; the real brand
+   logo (fetched from the Simple Icons CDN) loads on top and, if it loads
+   successfully, hides the fallback — see js/main.js */
+.tool-icon-wrap{
+    position:relative;
+    flex:0 0 40px;
+    width:40px; height:40px;
+    border-radius:var(--radius-sm);
+    display:flex; align-items:center; justify-content:center;
+    overflow:hidden;
+}
+.tool-icon-fallback{ position:relative; }
+.tool-icon-real{
+    position:absolute; inset:0;
+    margin:auto;
+    width:22px; height:22px;
+    object-fit:contain;
+    display:none;
+}
 
 /* ---------------- CONTACT ---------------- */
 .contact-lede{
